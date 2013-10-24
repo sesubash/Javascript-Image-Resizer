@@ -1,5 +1,6 @@
 // Subash selvaraj 2013
 // http://subashflash.blogspot.com
+// https://github.com/sesubash/Javascript-Image-Resizer
 // targetwidth and targetheight are the dimensions of the rendering area
 var ImageResizer = {
 
