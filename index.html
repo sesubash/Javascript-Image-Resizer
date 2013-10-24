@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+
+<title>Image Resizer</title>
+
+<style type="text/css">
+img{
+	position: absolute;
+}
+#myImg{
+	left: 300px;
+}
+#clipImage{
+	left: 300px;
+}
+.firstDiv{
+	position: relative;
+	height: 217px;
+	
+}
+.secondDiv{
+	position: relative;
+	
+}
+</style>
+<script type="text/javascript" src="jquery-1.8.2.js"></script>
+<script type="text/javascript" src="ImageResizer.js"></script>
+<script type="text/javascript">
+
+function resizeImage(img){	
+	ImageResizer.fixImage(img,215,217);
+}
+
+function clipImg(img){	
+	ImageResizer.clipImage(img,215,217);
+}
+
+</script>
+</head>
+<body>
+<div> Actual vs Result - Proportoinal Resize of 215x217</div>
+<div class="firstDiv">
+<img id="sample" src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash4/998768_552889338100709_2100506661_n.jpg" width="215" height="217" />
+
+<img id="myImg" src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash4/998768_552889338100709_2100506661_n.jpg" onLoad="resizeImage(this)"/>
+</div>
+
+<div > Actual vs Result - Clip Resize of 185x187 </div>
+<div class="secondDiv">
+<img id="sample2" src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash4/998768_552889338100709_2100506661_n.jpg" width="215" height="217"/>
+<img id="clipImage" src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash4/998768_552889338100709_2100506661_n.jpg" onLoad="clipImg(this)"/>
+
+</div>
+
+</body>
+</html>
