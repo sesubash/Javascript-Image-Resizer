@@ -7,8 +7,8 @@ usage
 =====
 html
 -----
-<img id="myImg" src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash4/998768_552889338100709_2100506661_n.jpg" onLoad="resizeImage(this)"/>
-<img id="clipImage" src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash4/998768_552889338100709_2100506661_n.jpg" onLoad="clipImg(this)"/>
+<img id="myImg" src="url.jpg" onLoad="resizeImage(this)"/>
+<img id="clipImage" src="url.jpg" onLoad="clipImg(this)"/>
 
 JavaScript
 --------
